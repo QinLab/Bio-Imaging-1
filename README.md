@@ -1,4 +1,7 @@
 # Bioimaging
+### Collective effort (manual-plant-dataset)
+    Plant dataset that was acquired manually from SERNEC and other plant sources such as FLAS. Plant reproductive part cutting for positive images is still a work in progress as this is done manually.
+    Having to do this will decrease as Mr. Powell is trying to recover (through more official means) reproductive and non-reproductive plants from SERNEC. We will also be able to have Biology students create data for us.
 ### William (image-recog)
     Adapted from [https://gogul09.github.io/software/flower-recognition-deep-learning]
      1. Download dataset from [https://mega.nz/#F!eRdWwC6Z!roFvMmDfxIR455wdX_Z8dA]
