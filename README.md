@@ -4,6 +4,7 @@
     Plant reproductive part cutting for positive images is still a work in progress as this is done manually.
     Having to do this will decrease as Mr. Powell is trying to recover (through more official means) reproductive and 
     non-reproductive plants from SERNEC. We will also be able to have Biology students create data for us.
+
 ### William (image-recog)
     Adapted from [https://gogul09.github.io/software/flower-recognition-deep-learning]
     Using this example to automate detection of herbarium specimens with reproductive organs present.
@@ -12,9 +13,7 @@
      2. Run extract_features.py
      3. Run train.py
      4. Run test.py to test on images in dataset/test folder
-     # Known Issues
-        1. Accuracy is currently 100%. I am not sure if this is an error due to lack of data.
-
+     
 ### Dax (googlenet-scratch)
     Inception-V3 using Keras
     Notes:
@@ -28,3 +27,7 @@
                 [2] https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-017-1014-z
                 [3] http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf
                 [4] https://arxiv.org/pdf/1409.1556.pdf
+                
+ ### Known Issues
+ #### Image-Recog
+- [ ] Accuracy is currently 100%. I am not sure if this is an error due to lack of data.
