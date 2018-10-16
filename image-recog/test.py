@@ -47,8 +47,8 @@ seed = config["seed"]
 classifier_path = config["classifier_path"]
 
 # load the trained logistic regression classifier
-# print("[INFO] loading the classifier...")
-# classifier = pickle.load(open(classifier_path, 'rb'))
+print("[INFO] loading the classifier...")
+classifier = pickle.load(open(classifier_path, 'rb'))
 
 # pretrained models needed to perform feature extraction on test data too!
 if model_name == "vgg16":

@@ -14,6 +14,7 @@ from keras.preprocessing import image
 from keras.models import Model
 from keras.models import model_from_json
 from keras.layers import Input
+from keras.layers import Flatten
 
 # other imports
 from sklearn.preprocessing import LabelEncoder
@@ -25,6 +26,7 @@ import os
 import json
 import datetime
 import time
+
 
 # load the user configs
 with open('conf/conf.json') as f:
@@ -62,15 +64,15 @@ elif model_name == "resnet50":
   image_size = (224, 224)
 elif model_name == "inceptionv3":
   base_model = InceptionV3(include_top=include_top, weights=weights, input_tensor=Input(shape=(299,299,3)))
-  model = Model(input=base_model.input, output=base_model.get_layer('batch_normalization_1').output)
+  model = Model(input=base_model.input, output=base_model.get_layer('custom').output)
   image_size = (299, 299)
 elif model_name == "inceptionresnetv2":
   base_model = InceptionResNetV2(include_top=include_top, weights=weights, input_tensor=Input(shape=(299,299,3)))
-  model = Model(input=base_model.input, output=base_model.get_layer('batch_normalization_1').output)
+  model = Model(input=base_model.input, output=base_model.get_layer('custom').output)
   image_size = (299, 299)
 elif model_name == "mobilenet":
   base_model = MobileNet(include_top=include_top, weights=weights, input_tensor=Input(shape=(224,224,3)), input_shape=(224,224,3))
-  model = Model(input=base_model.input, output=base_model.get_layer('batch_normalization_1').output)
+  model = Model(input=base_model.input, output=base_model.get_layer('custom').output)
   image_size = (224, 224)
 elif model_name == "xception":
   base_model = Xception(weights=weights)
@@ -98,7 +100,7 @@ count = 1
 for i, label in enumerate(train_labels):
   cur_path = train_path + "/" + label
   count = 1
-  for image_path in glob.glob(cur_path + "/*.jpg"):
+  for image_path in glob.glob(cur_path + "/*.png"):
     img = image.load_img(image_path, target_size=image_size)
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
