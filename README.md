@@ -7,12 +7,13 @@
 
 ### William (image-recog)
     Adapted from [https://gogul09.github.io/software/flower-recognition-deep-learning]
-    Using this example to automate detection of herbarium specimens with reproductive organs present.
-    Currently using VGG19 from Keras
+    Using this example to automate detection of herbarium specimens that were classified incorrectly.
+    Currently using VGG19 from Keras 2.1.2
      1. Download dataset from [https://mega.nz/#F!eRdWwC6Z!roFvMmDfxIR455wdX_Z8dA]
-     2. Run extract_features.py
-     3. Run train.py
-     4. Run test.py to test on images in dataset/test folder
+     2. Modify config.json model name to desired model (Resnet50/VGG19/InceptionV3)
+     3. Run extract_features.py
+     4. Run train.py
+     5. Run test.py to test on images in dataset/test folder
      
 ### Dax (googlenet-scratch)
     Inception-V3 using Keras
