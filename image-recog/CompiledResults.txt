@@ -1,0 +1,18 @@
+VGG19:
+	Rank-1 Accuracy:  80.00%
+	Rank-5 Accuracy: 100.00%
+Xception:
+	Rank-1 Accuracy:  75.00%
+	Rank-5 Accuracy: 100.00%
+Resnet50:
+	Rank-1 Accuracy:  75.00%
+	Rank-5 Accuracy: 100.00%
+Mobilenet:
+	Rank-1 Accuracy:  85.00%
+	Rank-5 Accuracy: 100.00%
+InceptionV3:
+	Rank-1 Accuracy:  75.00%
+	Rank-5 Accuracy:  95.00%
+InceptionResnetV2:
+	Rank-1 Accuracy:  65.00%
+	Rank-5 Accuracy:  90.00%
